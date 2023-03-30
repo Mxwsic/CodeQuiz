@@ -1,0 +1,51 @@
+:root{
+    --fonts: "Times New Roman", times, sans-serif;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+
+header{
+    font-size: x-large;
+    font-family: var(--fonts);
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: row wrap;
+}
+
+section{
+    display: flex;
+    font-family: var(--fonts);
+    font-weight: bold;
+    background-color: whitesmoke;
+    justify-content: center;
+    padding-top: 60px;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+section > p{
+    font-family: var(--fonts);
+    font-weight: bolder;
+}
+
+
+
+button{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .35s ease-out;
+    justify-content: center;
+    background-color: whitesmoke;
+    color: red; 
+    font-size: large;
+    font-family: var(--fonts);
+    font-weight: bold;
+    width: 10em;
+    cursor: pointer;
+}
