@@ -66,7 +66,7 @@ function clickAnswer(event){
         }
         }
         question1++
-    if(question1 == quizQuestions.length){
+    if(question1 == questions.length){
         gameEnd()
     }  
     displayQuestions()
