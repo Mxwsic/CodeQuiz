@@ -46,11 +46,11 @@ var timer = setInterval(function() {
     };
 
 function displayQuestions(){
-    questionDiv.textContent = quizQuestions[question1].question
+    questionDiv.textContent = questions[question1].question
     answersDiv.innerHTML = ""
     for(let i = 0; i<=3; i++){
     var newLi = document.createElement("button")
-        newLi.textContent = quizQuestions[question1].answers[i]
+        newLi.textContent = questions[question1].answers[i]
         answersDiv.appendChild(newLi)
     }
 }
@@ -58,8 +58,8 @@ function displayQuestions(){
 function clickAnswer(event){
     var element = event.target.textContent
     console.log("event target" , element)
-    console.log("correct Answer",quizQuestions[question1].correctAnswer)
-        if(element !== quizQuestions[question1].correctAnswer){
+    console.log("correct Answer",questions[question1].correctAnswer)
+        if(element !== questions[question1].correctAnswer){
             timeLeft -= 15
         if(timeLeft < 0){
             timeLeft = 0
